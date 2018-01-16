@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" yahoo:count="4" yahoo:created="2017-12-31T19:46:13Z"
+       yahoo:lang="en-US">
+    <results>
+        <channel>
+            <yweather:units xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" distance="mi" pressure="in"
+                            speed="mph" temperature="F"/>
+            <title>Yahoo! Weather - Orangevale, CA, US</title>
+            <link>
+                http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12797932/
+            </link>
+            <description>Yahoo! Weather for Orangevale, CA, US</description>
+            <language>en-us</language>
+            <lastBuildDate>Sun, 31 Dec 2017 11:46 AM PST</lastBuildDate>
+            <ttl>60</ttl>
+            <yweather:location xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" city="Orangevale"
+                               country="United States" region=" CA"/>
+            <yweather:wind xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" chill="50" direction="270"
+                           speed="4"/>
+            <yweather:atmosphere xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" humidity="58"
+                                 pressure="1010.0" rising="0" visibility="16.1"/>
+            <yweather:astronomy xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" sunrise="7:23 am"
+                                sunset="4:53 pm"/>
+            <image>
+                <title>Yahoo! Weather</title>
+                <width>142</width>
+                <height>18</height>
+                <link>http://weather.yahoo.com</link>
+                <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+            </image>
+            <item>
+                <title>Conditions for Orangevale, CA, US at 11:00 AM PST</title>
+                <geo:lat xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">38.690392</geo:lat>
+                <geo:long xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">-121.221329</geo:long>
+                <link>
+                    http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12797932/
+                </link>
+                <pubDate>Sun, 31 Dec 2017 11:00 AM PST</pubDate>
+                <yweather:condition xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26"
+                                    date="Sun, 31 Dec 2017 11:00 AM PST" temp="51" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="31 Dec 2017"
+                                   day="Sun" high="56" low="39" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="01 Jan 2018"
+                                   day="Mon" high="60" low="45" text="Partly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="02 Jan 2018"
+                                   day="Tue" high="59" low="46" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="03 Jan 2018"
+                                   day="Wed" high="60" low="47" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="04 Jan 2018"
+                                   day="Thu" high="63" low="54" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="05 Jan 2018"
+                                   day="Fri" high="60" low="54" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="06 Jan 2018"
+                                   day="Sat" high="57" low="43" text="Partly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="07 Jan 2018"
+                                   day="Sun" high="56" low="40" text="Partly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="08 Jan 2018"
+                                   day="Mon" high="58" low="42" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="09 Jan 2018"
+                                   day="Tue" high="59" low="44" text="Scattered Showers"/>
+                <description>&lt;![CDATA[&lt;img src="http://l.yimg.com/a/i/us/we/52/26.gif"/&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Current Conditions:&lt;/b&gt;
+                    &lt;BR /&gt;Cloudy
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Forecast:&lt;/b&gt;
+                    &lt;BR /&gt; Sun - Mostly Cloudy. High: 56Low: 39
+                    &lt;BR /&gt; Mon - Partly Cloudy. High: 60Low: 45
+                    &lt;BR /&gt; Tue - Cloudy. High: 59Low: 46
+                    &lt;BR /&gt; Wed - Scattered Showers. High: 60Low: 47
+                    &lt;BR /&gt; Thu - Scattered Showers. High: 63Low: 54
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;a
+                    href="http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12797932/"&gt;Full
+                    Forecast at Yahoo! Weather&lt;/a&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    ]]&gt;
+                </description>
+                <guid isPermaLink="false"/>
+            </item>
+        </channel>
+        <channel>
+            <yweather:units xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" distance="mi" pressure="in"
+                            speed="mph" temperature="F"/>
+            <title>Yahoo! Weather - Mitterteich, BY, DE</title>
+            <link>
+                http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-24526895/
+            </link>
+            <description>Yahoo! Weather for Mitterteich, BY, DE</description>
+            <language>en-us</language>
+            <lastBuildDate>Sun, 31 Dec 2017 08:46 PM CET</lastBuildDate>
+            <ttl>60</ttl>
+            <yweather:location xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" city="Mitterteich"
+                               country="Germany" region=" BY"/>
+            <yweather:wind xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" chill="41" direction="190"
+                           speed="11"/>
+            <yweather:atmosphere xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" humidity="91" pressure="944.0"
+                                 rising="0" visibility="15.2"/>
+            <yweather:astronomy xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" sunrise="8:9 am"
+                                sunset="4:20 pm"/>
+            <image>
+                <title>Yahoo! Weather</title>
+                <width>142</width>
+                <height>18</height>
+                <link>http://weather.yahoo.com</link>
+                <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+            </image>
+            <item>
+                <title>Conditions for Mitterteich, BY, DE at 08:00 PM CET</title>
+                <geo:lat xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">49.950909</geo:lat>
+                <geo:long xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">12.24361</geo:long>
+                <link>
+                    http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-24526895/
+                </link>
+                <pubDate>Sun, 31 Dec 2017 08:00 PM CET</pubDate>
+                <yweather:condition xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="27"
+                                    date="Sun, 31 Dec 2017 08:00 PM CET" temp="44" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="12" date="31 Dec 2017"
+                                   day="Sun" high="50" low="41" text="Rain"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="01 Jan 2018"
+                                   day="Mon" high="42" low="35" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="5" date="02 Jan 2018"
+                                   day="Tue" high="37" low="35" text="Rain And Snow"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="5" date="03 Jan 2018"
+                                   day="Wed" high="43" low="35" text="Rain And Snow"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="04 Jan 2018"
+                                   day="Thu" high="37" low="35" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="5" date="05 Jan 2018"
+                                   day="Fri" high="43" low="35" text="Rain And Snow"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="06 Jan 2018"
+                                   day="Sat" high="41" low="34" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="07 Jan 2018"
+                                   day="Sun" high="39" low="33" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="08 Jan 2018"
+                                   day="Mon" high="38" low="32" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="09 Jan 2018"
+                                   day="Tue" high="37" low="31" text="Mostly Cloudy"/>
+                <description>&lt;![CDATA[&lt;img src="http://l.yimg.com/a/i/us/we/52/27.gif"/&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Current Conditions:&lt;/b&gt;
+                    &lt;BR /&gt;Mostly Cloudy
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Forecast:&lt;/b&gt;
+                    &lt;BR /&gt; Sun - Rain. High: 50Low: 41
+                    &lt;BR /&gt; Mon - Cloudy. High: 42Low: 35
+                    &lt;BR /&gt; Tue - Rain And Snow. High: 37Low: 35
+                    &lt;BR /&gt; Wed - Rain And Snow. High: 43Low: 35
+                    &lt;BR /&gt; Thu - Cloudy. High: 37Low: 35
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;a
+                    href="http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-24526895/"&gt;Full
+                    Forecast at Yahoo! Weather&lt;/a&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    ]]&gt;
+                </description>
+                <guid isPermaLink="false"/>
+            </item>
+        </channel>
+        <channel>
+            <yweather:units xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" distance="mi" pressure="in"
+                            speed="mph" temperature="F"/>
+            <title>Yahoo! Weather - Guanshan Township, Taitung County, TW</title>
+            <link>
+                http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-29380873/
+            </link>
+            <description>Yahoo! Weather for Guanshan Township, Taitung County, TW</description>
+            <language>en-us</language>
+            <lastBuildDate>Mon, 01 Jan 2018 03:46 AM CST</lastBuildDate>
+            <ttl>60</ttl>
+            <yweather:location xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" city="Guanshan Township"
+                               country="Taiwan" region=" Taitung County"/>
+            <yweather:wind xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" chill="55" direction="0" speed="4"/>
+            <yweather:atmosphere xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" humidity="78" pressure="945.0"
+                                 rising="0" visibility="15.3"/>
+            <yweather:astronomy xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" sunrise="6:37 am"
+                                sunset="5:22 pm"/>
+            <image>
+                <title>Yahoo! Weather</title>
+                <width>142</width>
+                <height>18</height>
+                <link>http://weather.yahoo.com</link>
+                <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+            </image>
+            <item>
+                <title>Conditions for Guanshan Township, Taitung County, TW at 03:00 AM CST</title>
+                <geo:lat xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">23.03302</geo:lat>
+                <geo:long xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">121.164833</geo:long>
+                <link>
+                    http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-29380873/
+                </link>
+                <pubDate>Mon, 01 Jan 2018 03:00 AM CST</pubDate>
+                <yweather:condition xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="11"
+                                    date="Mon, 01 Jan 2018 03:00 AM CST" temp="56" text="Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="12" date="01 Jan 2018"
+                                   day="Mon" high="65" low="57" text="Rain"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="02 Jan 2018"
+                                   day="Tue" high="69" low="57" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="03 Jan 2018"
+                                   day="Wed" high="70" low="61" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="04 Jan 2018"
+                                   day="Thu" high="68" low="58" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="05 Jan 2018"
+                                   day="Fri" high="71" low="62" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="06 Jan 2018"
+                                   day="Sat" high="69" low="63" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="07 Jan 2018"
+                                   day="Sun" high="70" low="63" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="47" date="08 Jan 2018"
+                                   day="Mon" high="77" low="64" text="Scattered Thunderstorms"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="11" date="09 Jan 2018"
+                                   day="Tue" high="65" low="54" text="Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="10 Jan 2018"
+                                   day="Wed" high="64" low="51" text="Scattered Showers"/>
+                <description>&lt;![CDATA[&lt;img src="http://l.yimg.com/a/i/us/we/52/11.gif"/&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Current Conditions:&lt;/b&gt;
+                    &lt;BR /&gt;Showers
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Forecast:&lt;/b&gt;
+                    &lt;BR /&gt; Mon - Rain. High: 65Low: 57
+                    &lt;BR /&gt; Tue - Mostly Cloudy. High: 69Low: 57
+                    &lt;BR /&gt; Wed - Mostly Cloudy. High: 70Low: 61
+                    &lt;BR /&gt; Thu - Scattered Showers. High: 68Low: 58
+                    &lt;BR /&gt; Fri - Scattered Showers. High: 71Low: 62
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;a
+                    href="http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-29380873/"&gt;Full
+                    Forecast at Yahoo! Weather&lt;/a&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    ]]&gt;
+                </description>
+                <guid isPermaLink="false"/>
+            </item>
+        </channel>
+        <channel>
+            <yweather:units xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" distance="mi" pressure="in"
+                            speed="mph" temperature="F"/>
+            <title>Yahoo! Weather - Isla, VE, MX</title>
+            <link>
+                http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-24553043/
+            </link>
+            <description>Yahoo! Weather for Isla, VE, MX</description>
+            <language>en-us</language>
+            <lastBuildDate>Sun, 31 Dec 2017 01:46 PM CST</lastBuildDate>
+            <ttl>60</ttl>
+            <yweather:location xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" city="Isla" country="Mexico"
+                               region=" VE"/>
+            <yweather:wind xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" chill="81" direction="338"
+                           speed="7"/>
+            <yweather:atmosphere xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" humidity="60"
+                                 pressure="1010.0" rising="0" visibility="16.1"/>
+            <yweather:astronomy xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" sunrise="6:53 am"
+                                sunset="5:57 pm"/>
+            <image>
+                <title>Yahoo! Weather</title>
+                <width>142</width>
+                <height>18</height>
+                <link>http://weather.yahoo.com</link>
+                <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+            </image>
+            <item>
+                <title>Conditions for Isla, VE, MX at 01:00 PM CST</title>
+                <geo:lat xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">17.947741</geo:lat>
+                <geo:long xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">-95.547287</geo:long>
+                <link>
+                    http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-24553043/
+                </link>
+                <pubDate>Sun, 31 Dec 2017 01:00 PM CST</pubDate>
+                <yweather:condition xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26"
+                                    date="Sun, 31 Dec 2017 01:00 PM CST" temp="81" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="31 Dec 2017"
+                                   day="Sun" high="81" low="65" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="12" date="01 Jan 2018"
+                                   day="Mon" high="74" low="67" text="Rain"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="02 Jan 2018"
+                                   day="Tue" high="68" low="64" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="03 Jan 2018"
+                                   day="Wed" high="68" low="64" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="26" date="04 Jan 2018"
+                                   day="Thu" high="67" low="63" text="Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="28" date="05 Jan 2018"
+                                   day="Fri" high="71" low="63" text="Mostly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="39" date="06 Jan 2018"
+                                   day="Sat" high="72" low="64" text="Scattered Showers"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="07 Jan 2018"
+                                   day="Sun" high="75" low="60" text="Partly Cloudy"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="32" date="08 Jan 2018"
+                                   day="Mon" high="76" low="56" text="Sunny"/>
+                <yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="09 Jan 2018"
+                                   day="Tue" high="74" low="62" text="Partly Cloudy"/>
+                <description>&lt;![CDATA[&lt;img src="http://l.yimg.com/a/i/us/we/52/26.gif"/&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Current Conditions:&lt;/b&gt;
+                    &lt;BR /&gt;Cloudy
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;b&gt;Forecast:&lt;/b&gt;
+                    &lt;BR /&gt; Sun - Mostly Cloudy. High: 81Low: 65
+                    &lt;BR /&gt; Mon - Rain. High: 74Low: 67
+                    &lt;BR /&gt; Tue - Cloudy. High: 68Low: 64
+                    &lt;BR /&gt; Wed - Cloudy. High: 68Low: 64
+                    &lt;BR /&gt; Thu - Cloudy. High: 67Low: 63
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;a
+                    href="http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-24553043/"&gt;Full
+                    Forecast at Yahoo! Weather&lt;/a&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    &lt;BR /&gt;
+                    ]]&gt;
+                </description>
+                <guid isPermaLink="false"/>
+            </item>
+        </channel>
+    </results>
+</query><!-- total: 34 -->

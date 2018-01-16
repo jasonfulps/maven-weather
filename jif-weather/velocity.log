@@ -1,0 +1,1142 @@
+2017-12-31 13:07:36,432 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:07:36,432 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:07:36,434 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:07:36,435 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:07:36,436 - Do unicode file recognition:  false
+2017-12-31 13:07:36,436 - FileResourceLoader : adding path '.'
+2017-12-31 13:07:36,441 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:07:36,442 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:07:36,443 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:07:36,444 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:07:36,444 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:07:36,445 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:07:36,459 - Created '20' parsers.
+2017-12-31 13:07:36,461 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:07:36,461 - Velocimacro : Default library not found.
+2017-12-31 13:07:36,461 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:07:36,461 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:07:36,461 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:07:36,461 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:07:55,508 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:07:55,508 - Velocity was not initialized! Calling init()...
+2017-12-31 13:07:55,508 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:07:55,508 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:07:55,508 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:07:55,509 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2017-12-31 13:07:55,510 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:07:55,510 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:07:55,511 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:07:55,513 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:07:55,513 - Do unicode file recognition:  false
+2017-12-31 13:07:55,513 - FileResourceLoader : adding path '.'
+2017-12-31 13:07:55,520 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:07:55,520 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:07:55,521 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:07:55,521 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:07:55,522 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:07:55,522 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:07:55,537 - Created '20' parsers.
+2017-12-31 13:07:55,539 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:07:55,540 - Velocimacro : Default library not found.
+2017-12-31 13:07:55,540 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:07:55,540 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:07:55,540 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:07:55,540 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:11:56,322 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:11:56,322 - Velocity was not initialized! Calling init()...
+2017-12-31 13:11:56,322 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:11:56,322 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:11:56,322 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:11:56,323 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2017-12-31 13:11:56,324 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:11:56,324 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:11:56,325 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:11:56,327 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:11:56,327 - Do unicode file recognition:  false
+2017-12-31 13:11:56,327 - FileResourceLoader : adding path '.'
+2017-12-31 13:11:56,333 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:11:56,334 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:11:56,334 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:11:56,335 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:11:56,335 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:11:56,336 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:11:56,350 - Created '20' parsers.
+2017-12-31 13:11:56,353 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:11:56,353 - Velocimacro : Default library not found.
+2017-12-31 13:11:56,353 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:11:56,353 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:11:56,353 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:11:56,353 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:13:32,522 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:13:32,522 - Velocity was not initialized! Calling init()...
+2017-12-31 13:13:32,522 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:13:32,522 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:13:32,522 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:13:32,523 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2017-12-31 13:13:32,524 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:13:32,524 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:13:32,525 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:13:32,527 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:13:32,527 - Do unicode file recognition:  false
+2017-12-31 13:13:32,527 - FileResourceLoader : adding path '.'
+2017-12-31 13:13:32,533 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:13:32,533 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:13:32,534 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:13:32,534 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:13:32,535 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:13:32,536 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:13:32,549 - Created '20' parsers.
+2017-12-31 13:13:32,552 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:13:32,552 - Velocimacro : Default library not found.
+2017-12-31 13:13:32,552 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:13:32,552 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:13:32,552 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:13:32,552 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:14:50,216 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:14:50,217 - Velocity was not initialized! Calling init()...
+2017-12-31 13:14:50,217 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:14:50,217 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:14:50,217 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:14:50,217 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2017-12-31 13:14:50,219 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:14:50,219 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:14:50,220 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:14:50,221 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:14:50,222 - Do unicode file recognition:  false
+2017-12-31 13:14:50,222 - FileResourceLoader : adding path '.'
+2017-12-31 13:14:50,227 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:14:50,228 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:14:50,229 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:14:50,229 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:14:50,230 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:14:50,230 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:14:50,247 - Created '20' parsers.
+2017-12-31 13:14:50,250 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:14:50,250 - Velocimacro : Default library not found.
+2017-12-31 13:14:50,250 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:14:50,250 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:14:50,250 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:14:50,250 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:16:21,397 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:16:21,397 - Velocity was not initialized! Calling init()...
+2017-12-31 13:16:21,397 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:16:21,397 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:16:21,397 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:16:21,397 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2017-12-31 13:16:21,399 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:16:21,399 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:16:21,400 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:16:21,401 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:16:21,402 - Do unicode file recognition:  false
+2017-12-31 13:16:21,402 - FileResourceLoader : adding path '.'
+2017-12-31 13:16:21,408 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:16:21,408 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:16:21,409 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:16:21,410 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:16:21,410 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:16:21,411 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:16:21,425 - Created '20' parsers.
+2017-12-31 13:16:21,428 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:16:21,429 - Velocimacro : Default library not found.
+2017-12-31 13:16:21,429 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:16:21,429 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:16:21,429 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:16:21,429 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:20:41,226 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:20:41,227 - Velocity was not initialized! Calling init()...
+2017-12-31 13:20:41,227 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:20:41,227 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:20:41,227 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:20:41,227 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 32 more
+2017-12-31 13:20:41,229 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:20:41,229 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:20:41,230 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:20:41,233 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:20:41,234 - Do unicode file recognition:  false
+2017-12-31 13:20:41,234 - FileResourceLoader : adding path '.'
+2017-12-31 13:20:41,242 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:20:41,243 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:20:41,244 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:20:41,245 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:20:41,246 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:20:41,247 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:20:41,264 - Created '20' parsers.
+2017-12-31 13:20:41,267 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:20:41,268 - Velocimacro : Default library not found.
+2017-12-31 13:20:41,268 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:20:41,268 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:20:41,268 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:20:41,268 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:21:15,943 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:21:15,943 - Velocity was not initialized! Calling init()...
+2017-12-31 13:21:15,943 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:21:15,943 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:21:15,943 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:21:15,944 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 32 more
+2017-12-31 13:21:15,945 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:21:15,945 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:21:15,946 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:21:15,949 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:21:15,950 - Do unicode file recognition:  false
+2017-12-31 13:21:15,950 - FileResourceLoader : adding path '.'
+2017-12-31 13:21:15,959 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:21:15,960 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:21:15,961 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:21:15,962 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:21:15,963 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:21:15,964 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:21:15,984 - Created '20' parsers.
+2017-12-31 13:21:15,988 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:21:15,988 - Velocimacro : Default library not found.
+2017-12-31 13:21:15,988 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:21:15,989 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:21:15,989 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:21:15,989 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2017-12-31 13:21:46,732 - Log4JLogChute initialized using file 'velocity.log'
+2017-12-31 13:21:46,732 - Velocity was not initialized! Calling init()...
+2017-12-31 13:21:46,732 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2017-12-31 13:21:46,732 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2017-12-31 13:21:46,732 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2017-12-31 13:21:46,732 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 40 more
+2017-12-31 13:21:46,734 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:21:46,734 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2017-12-31 13:21:46,735 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2017-12-31 13:21:46,737 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2017-12-31 13:21:46,737 - Do unicode file recognition:  false
+2017-12-31 13:21:46,737 - FileResourceLoader : adding path '.'
+2017-12-31 13:21:46,744 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2017-12-31 13:21:46,745 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2017-12-31 13:21:46,746 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2017-12-31 13:21:46,747 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2017-12-31 13:21:46,747 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2017-12-31 13:21:46,748 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2017-12-31 13:21:46,763 - Created '20' parsers.
+2017-12-31 13:21:46,766 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2017-12-31 13:21:46,766 - Velocimacro : Default library not found.
+2017-12-31 13:21:46,766 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2017-12-31 13:21:46,766 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2017-12-31 13:21:46,766 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2017-12-31 13:21:46,766 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 16:33:00,690 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 16:33:00,691 - Velocity was not initialized! Calling init()...
+2018-01-15 16:33:00,691 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 16:33:00,691 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 16:33:00,691 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 16:33:00,691 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 16:33:00,693 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 16:33:00,693 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 16:33:00,694 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 16:33:00,696 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 16:33:00,697 - Do unicode file recognition:  false
+2018-01-15 16:33:00,697 - FileResourceLoader : adding path '.'
+2018-01-15 16:33:00,706 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 16:33:00,707 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 16:33:00,707 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 16:33:00,708 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 16:33:00,709 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 16:33:00,709 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 16:33:00,730 - Created '20' parsers.
+2018-01-15 16:33:00,733 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 16:33:00,733 - Velocimacro : Default library not found.
+2018-01-15 16:33:00,733 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 16:33:00,733 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 16:33:00,733 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 16:33:00,733 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 16:33:56,359 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 16:33:56,359 - Velocity was not initialized! Calling init()...
+2018-01-15 16:33:56,359 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 16:33:56,359 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 16:33:56,359 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 16:33:56,360 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at WeatherFormatter.format(WeatherFormatter.java:22)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 16:33:56,361 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 16:33:56,361 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 16:33:56,362 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 16:33:56,364 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 16:33:56,364 - Do unicode file recognition:  false
+2018-01-15 16:33:56,364 - FileResourceLoader : adding path '.'
+2018-01-15 16:33:56,370 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 16:33:56,371 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 16:33:56,371 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 16:33:56,372 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 16:33:56,373 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 16:33:56,373 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 16:33:56,387 - Created '20' parsers.
+2018-01-15 16:33:56,391 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 16:33:56,391 - Velocimacro : Default library not found.
+2018-01-15 16:33:56,391 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 16:33:56,391 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 16:33:56,391 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 16:33:56,391 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 16:59:37,901 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 16:59:37,901 - Velocity was not initialized! Calling init()...
+2018-01-15 16:59:37,902 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 16:59:37,902 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 16:59:37,902 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 16:59:37,902 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at org.jif.weather.services.WeatherFormatter.format(WeatherFormatter.java:21)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 16:59:37,904 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 16:59:37,904 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 16:59:37,905 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 16:59:37,907 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 16:59:37,907 - Do unicode file recognition:  false
+2018-01-15 16:59:37,907 - FileResourceLoader : adding path '.'
+2018-01-15 16:59:37,913 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 16:59:37,914 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 16:59:37,914 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 16:59:37,915 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 16:59:37,915 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 16:59:37,916 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 16:59:37,930 - Created '20' parsers.
+2018-01-15 16:59:37,932 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 16:59:37,933 - Velocimacro : Default library not found.
+2018-01-15 16:59:37,933 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 16:59:37,933 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 16:59:37,933 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 16:59:37,933 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 17:09:36,349 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 17:09:36,350 - Velocity was not initialized! Calling init()...
+2018-01-15 17:09:36,350 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 17:09:36,350 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 17:09:36,350 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 17:09:36,350 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at org.jif.weather.services.WeatherFormatter.format(WeatherFormatter.java:21)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 17:09:36,352 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:09:36,352 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:09:36,353 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 17:09:36,355 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 17:09:36,355 - Do unicode file recognition:  false
+2018-01-15 17:09:36,355 - FileResourceLoader : adding path '.'
+2018-01-15 17:09:36,361 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 17:09:36,362 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 17:09:36,362 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 17:09:36,363 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 17:09:36,363 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 17:09:36,364 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 17:09:36,380 - Created '20' parsers.
+2018-01-15 17:09:36,383 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 17:09:36,383 - Velocimacro : Default library not found.
+2018-01-15 17:09:36,383 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 17:09:36,383 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 17:09:36,383 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 17:09:36,383 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 17:12:11,879 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 17:12:11,879 - Velocity was not initialized! Calling init()...
+2018-01-15 17:12:11,879 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 17:12:11,879 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 17:12:11,879 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 17:12:11,879 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at org.jif.weather.services.WeatherFormatter.format(WeatherFormatter.java:21)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 17:12:11,881 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:12:11,881 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:12:11,882 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 17:12:11,883 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 17:12:11,884 - Do unicode file recognition:  false
+2018-01-15 17:12:11,884 - FileResourceLoader : adding path '.'
+2018-01-15 17:12:11,890 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 17:12:11,891 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 17:12:11,891 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 17:12:11,892 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 17:12:11,892 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 17:12:11,893 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 17:12:11,907 - Created '20' parsers.
+2018-01-15 17:12:11,910 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 17:12:11,910 - Velocimacro : Default library not found.
+2018-01-15 17:12:11,910 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 17:12:11,910 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 17:12:11,911 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 17:12:11,911 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 17:13:36,984 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 17:13:36,984 - Velocity was not initialized! Calling init()...
+2018-01-15 17:13:36,984 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 17:13:36,984 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 17:13:36,984 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 17:13:36,984 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at org.jif.weather.services.WeatherFormatter.format(WeatherFormatter.java:21)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 17:13:36,986 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:13:36,986 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:13:36,987 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 17:13:36,989 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 17:13:36,989 - Do unicode file recognition:  false
+2018-01-15 17:13:36,989 - FileResourceLoader : adding path '.'
+2018-01-15 17:13:36,995 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 17:13:36,996 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 17:13:36,997 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 17:13:36,997 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 17:13:36,998 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 17:13:36,999 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 17:13:37,015 - Created '20' parsers.
+2018-01-15 17:13:37,018 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 17:13:37,018 - Velocimacro : Default library not found.
+2018-01-15 17:13:37,018 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 17:13:37,018 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 17:13:37,018 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 17:13:37,018 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 17:16:33,477 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 17:16:33,477 - Velocity was not initialized! Calling init()...
+2018-01-15 17:16:33,477 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 17:16:33,477 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 17:16:33,477 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 17:16:33,477 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at org.jif.weather.services.WeatherFormatter.format(WeatherFormatter.java:21)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 17:16:33,479 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:16:33,479 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:16:33,480 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 17:16:33,481 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 17:16:33,482 - Do unicode file recognition:  false
+2018-01-15 17:16:33,482 - FileResourceLoader : adding path '.'
+2018-01-15 17:16:33,488 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 17:16:33,488 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 17:16:33,489 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 17:16:33,489 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 17:16:33,490 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 17:16:33,491 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 17:16:33,505 - Created '20' parsers.
+2018-01-15 17:16:33,508 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 17:16:33,508 - Velocimacro : Default library not found.
+2018-01-15 17:16:33,508 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 17:16:33,508 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 17:16:33,508 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 17:16:33,508 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-01-15 17:18:05,664 - Log4JLogChute initialized using file 'velocity.log'
+2018-01-15 17:18:05,665 - Velocity was not initialized! Calling init()...
+2018-01-15 17:18:05,665 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2018-01-15 17:18:05,665 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2018-01-15 17:18:05,665 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-01-15 17:18:05,665 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:993)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.runtime.RuntimeSingleton.parse(RuntimeSingleton.java:265)
+	at org.apache.velocity.app.Velocity.evaluate(Velocity.java:274)
+	at org.jif.weather.services.WeatherFormatter.format(WeatherFormatter.java:21)
+	at weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2018-01-15 17:18:05,667 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:18:05,667 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-01-15 17:18:05,668 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2018-01-15 17:18:05,669 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-01-15 17:18:05,670 - Do unicode file recognition:  false
+2018-01-15 17:18:05,670 - FileResourceLoader : adding path '.'
+2018-01-15 17:18:05,676 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2018-01-15 17:18:05,676 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-01-15 17:18:05,677 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-01-15 17:18:05,677 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-01-15 17:18:05,678 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-01-15 17:18:05,678 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-01-15 17:18:05,694 - Created '20' parsers.
+2018-01-15 17:18:05,696 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-01-15 17:18:05,696 - Velocimacro : Default library not found.
+2018-01-15 17:18:05,696 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-01-15 17:18:05,696 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-01-15 17:18:05,696 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-01-15 17:18:05,696 - Velocimacro : autoload off : VM system will not automatically reload global library macros
